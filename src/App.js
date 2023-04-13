@@ -35,19 +35,14 @@ export default function App() {
       />
       {/*ahora el map */}
       {products.map(({ image, title, description }) => (
-        <>
-          <div
-            display="flex"
-            flexDirection="row"
-            flexWrap="wrap"
-            justifyContent="center"
-            alignItems="center"
-          >
+        <div style={{ display:"flex", flexDirection:"column", justifyContent:"center", alignItems:"center"}}>
+          
             <img src={image} width="100" />
             <h1>{title}</h1>
             <p>{description}</p>
-          </div>
-        </>
+            
+        </div>
+      
       ))}
     </div>
   );
